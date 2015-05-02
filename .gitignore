@@ -1,0 +1,15 @@
+# NPM & Bower files & dir
+bower_components/
+node_modules/
+test/
+tests/
+
+# SASS dir & files
+.sass-cache
+
+# Dist files
+assets/dist/
+assets/css/
+
+# Mac OS files
+.DS_Store
