@@ -1,0 +1,19 @@
+{
+  "name": "YoshiAimeLesKiwis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damien Senger",
+  "license": "MIT",
+  "description": "* Yoshi aime les Kiwis",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hiwelo/YoshiAimeLesKiwis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hiwelo/YoshiAimeLesKiwis/issues"
+  },
+  "homepage": "https://github.com/hiwelo/YoshiAimeLesKiwis"
+}
