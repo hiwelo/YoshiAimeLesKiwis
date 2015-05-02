@@ -5,18 +5,23 @@
     <title>Yoshi au pays des Kiwis !</title>
     <meta name="description" value="Le pays des Kiwis, une idée de folie pour Yoshi !">
     <link rel="stylesheet" media="all" href="dist/main.css">
+    <link rel="stylesheet" media="all" href="bower_components/wow/css/libs/animate.css">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     <script src="bower_components/jQuery/dist/jquery.min.js"></script>
     <script src="bower_components/animatedmodal/animatedModal.min.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script>new WOW().init();</script>
     <script src="dist/main.js"></script>
 </head>
 <body>
-    <header>
-        <h1></h1>
-        <nav class="navigation--liste">
-            <a class="presentation" href="#presentation" title="Une petite présentation">Ma présentation</a>
-            <a class="projets" href="#projets" title="Les projets qui me tiennent à cœur">Mes projets</a>
-            <a class="extras" href="#extras" title="Quelques informations en plus !">Un petit extra</a>
-        </nav>
+    <header class="header--container col wow fadeInUp">
+        <h1 class="header--title">Bonjour <span>Alsacréations</span> :&nbsp;)</h1>
     </header>
+    <nav class="wow fadeInUp navigation--container">
+        <a class="presentation" href="#presentation" title="Une petite présentation">Ma présentation</a>
+        <a class="projets" href="#projets" title="Les projets qui me tiennent à cœur">Mes projets</a>
+        <a class="extras" href="#extras" title="Quelques informations en plus !">Un petit extra</a>
+        <a class="portfolio" href="http://hiwelo.co" title="En route vers mon portfolio">Mon portfolio</a>
+    </nav>
 </body>
 </html>

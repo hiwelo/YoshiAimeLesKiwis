@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "jQuery": "~2.1.4",
-    "animatedmodal": "joaopereirawd/animatedModal.js"
+    "animatedmodal": "joaopereirawd/animatedModal.js",
+    "ubuntu-font": "*",
+    "wow": "matthieua/WOW#~1.1.2"
   }
 }
