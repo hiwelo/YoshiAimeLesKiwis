@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/hiwelo/YoshiAimeLesKiwis/issues"
   },
-  "homepage": "https://github.com/hiwelo/YoshiAimeLesKiwis"
+  "homepage": "https://github.com/hiwelo/YoshiAimeLesKiwis",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^3.0.0",
+    "grunt-contrib-csslint": "^0.4.0",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jslint": "^1.1.14",
+    "grunt-notify": "^0.4.1",
+    "grunt-scss-lint": "^0.3.6"
+  }
 }
