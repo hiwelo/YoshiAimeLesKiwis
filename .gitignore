@@ -9,8 +9,8 @@ npm-debug.log
 .sass-cache
 
 # Dist files
-assets/dist/
-assets/css/
+dist/
+css/
 
 # Mac OS files
 .DS_Store
