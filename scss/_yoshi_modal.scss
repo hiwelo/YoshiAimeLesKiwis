@@ -1,0 +1,60 @@
+.modal {
+  background-color: $primary-background;
+  border-radius   : .66em;
+  height          : calc(100% - 200px);
+  opacity         : 0;
+  padding         : 30px 30px 65px 30px;
+  pointer-events  : none;
+  position        : fixed;
+  transition      : all 1s;
+  visibility      : hidden;
+  width           : calc(100% - 200px);
+  z-index         : 500;
+
+  &.presentation {
+    left: -110vw;
+    top : 100px;
+  }
+
+  &.projets {
+    left: 110vw;
+    top : 100px;
+  }
+
+  &.extras {
+    left: 100px;
+    top : -110vh;
+  }
+
+  &.actif {
+    left          : 100px;
+    opacity       : 1;
+    pointer-events: all;
+    top           : 100px;
+    visibility    : visible;
+  }
+}
+
+.modal--close {
+  bottom: 0px;
+  display: block;
+  height: 65px;
+  left: calc(50% - 10px);
+  padding: 20px;
+  position: absolute;
+  width: 65px;
+
+  svg {
+    height: 25px;
+    transition: all .5s;
+    width: 25px;
+  }
+}
+
+.modal--close:hover svg {
+  transform: scale(1.25);
+}
+
+.js--modal--close {
+  display: none;
+}
