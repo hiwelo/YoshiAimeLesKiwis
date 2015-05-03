@@ -1,22 +1,22 @@
 .header--container {
-    height: 80vh;
-    vertical-align: middle;
-    width: 100vw;
+  height: 80vh;
+  vertical-align: middle;
+  width: 100vw;
 }
 
 .header--title {
-    text-align: center;
+  text-align: center;
 
-    span::after {
-        display: inline-block;
-        background-image: url(../svg/alsa.svg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        content: ' ';
-        height: 30px;
-        margin-left: -8px;
-        vertical-align: 10px;
-        width: 30px;
-    }
+  span::after {
+    background-image: url('../svg/alsa.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: ' ';
+    display: inline-block;
+    height: 30px;
+    margin-left: -11px;
+    vertical-align: 7px;
+    width: 30px;
+  }
 }

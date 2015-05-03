@@ -1,5 +1,22 @@
 .navigation--container {
-    height: 20vh;
-    text-align: center;
-    width: 100vw;
+  display: table;
+  height: 20vh;
+  margin: 0 auto;
+  text-align: center;
+  width: 85vw;
+}
+
+.navigation--element {
+  color: $base-color;
+  display: table-cell;
+  font-size: $base-font-size;
+  height: 100%;
+  text-decoration: none;
+  transition: all .5s;
+  vertical-align: middle;
+  width: 25%;
+
+  &:hover {
+    color: $headings-color;
+  }
 }
