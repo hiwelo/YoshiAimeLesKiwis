@@ -1,42 +1,42 @@
 .modal {
-  background-color: $primary-background;
-  border-radius   : .66em;
-  height          : calc(100% - 200px);
-  opacity         : 0;
-  padding         : 30px 30px 65px 30px;
-  pointer-events  : none;
-  position        : fixed;
-  transition      : all 1s;
-  visibility      : hidden;
-  width           : calc(100% - 200px);
-  z-index         : 500;
+  background-color: $base-background;
+  border-radius: .66em;
+  height: calc(100% - 200px);
+  opacity: 0;
+  padding: 30px 30px 65px;
+  pointer-events: none;
+  position: fixed;
+  transition: all 1s;
+  visibility: hidden;
+  width: 750px;
+  z-index: 500;
 
   &.presentation {
     left: -110vw;
-    top : 100px;
+    top: 100px;
   }
 
   &.projets {
     left: 110vw;
-    top : 100px;
+    top: 100px;
   }
 
   &.extras {
     left: 100px;
-    top : -110vh;
+    top: -110vh;
   }
 
   &.actif {
-    left          : 100px;
-    opacity       : 1;
+    left: calc(50% - 400px);
+    opacity: 1;
     pointer-events: all;
-    top           : 100px;
-    visibility    : visible;
+    top: 100px;
+    visibility: visible;
   }
 }
 
 .modal--close {
-  bottom: 0px;
+  bottom: 0;
   display: block;
   height: 65px;
   left: calc(50% - 10px);

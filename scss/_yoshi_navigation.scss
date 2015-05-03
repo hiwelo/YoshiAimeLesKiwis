@@ -59,31 +59,31 @@
       width: 10px;
     }
   }
-}
 
-.navigation--element.inactif {
-  svg {
-    transform: scale(.75);
-  }
-}
-
-.navigation--element:hover {
-  span {
-    opacity: 1;
-    pointer-events: all;
+  &.inactif {
+    svg {
+      transform: scale(.75);
+    }
   }
 
-  svg {
-    transform: scale(1.15);
+  &:hover {
+    span {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    svg {
+      transform: scale(1.15);
+    }
 
     path {
       fill: $headings-color;
     }
   }
-}
 
-.navigation--element.actif {
-  svg {
-    transform: scale(1.33);
+  &.actif {
+    svg {
+      transform: scale(1.33);
+    }
   }
 }
