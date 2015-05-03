@@ -68,6 +68,8 @@
 
   &:hover,
   &:focus {
+    color: $headings-color;
+
     span {
       opacity: 1;
       pointer-events: all;

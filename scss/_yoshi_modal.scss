@@ -22,12 +22,12 @@
   }
 
   &.extras {
-    left: calc(50% - 400px);
+    left: calc(50% - 375px);
     top: -110vh;
   }
 
   &.actif {
-    left: calc(50% - 400px);
+    left: calc(50% - 375px);
     opacity: 1;
     pointer-events: all;
     top: 100px;
@@ -36,23 +36,31 @@
 }
 
 .modal--close {
+  border-radius: 50%;
   bottom: 0;
   display: block;
   height: 65px;
   left: calc(50% - 10px);
+  outline: none;
   padding: 20px;
   position: absolute;
+  transition: all .5s;
   width: 65px;
+
+  &:hover,
+  &:focus {
+    background: $headings-color;
+
+    svg {
+      transform: scale(1.25);
+    }
+  }
 
   svg {
     height: 25px;
     transition: all .5s;
     width: 25px;
   }
-}
-
-.modal--close:hover svg {
-  transform: scale(1.25);
 }
 
 .js--modal--close {
