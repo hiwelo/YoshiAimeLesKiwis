@@ -1,7 +1,8 @@
 /*jslint browser: true*/
-/*global $, jQuery, alert*/
+/*global $, jQuery, alert, window*/
 var nav = function () {
     'use strict';
+    var hash = window.location.hash.substr(1);
     $('.js--modal--close')
         .removeClass('js--modal--close')
         .addClass('modal--close');
@@ -38,6 +39,18 @@ var nav = function () {
             .removeClass('actif')
             .removeClass('inactif');
     });
+    if (hash !== "") {
+        $('.navigation--element')
+            .removeClass('actif')
+            .addClass('inactif');
+        $('.navigation--element.' + hash)
+            .removeClass('inactif')
+            .addClass('actif');
+        $('.modal.actif')
+            .removeClass('actif');
+        $('.modal.' + hash)
+            .addClass('actif');
+    }
 };
 
 $(document).ready(nav);
