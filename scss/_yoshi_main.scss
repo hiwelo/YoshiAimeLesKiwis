@@ -16,6 +16,10 @@ p {
   line-height: 1.66em;
 }
 
+strong {
+  color: $headings-color;
+}
+
 ul {
   list-style: none;
   padding: 0;
