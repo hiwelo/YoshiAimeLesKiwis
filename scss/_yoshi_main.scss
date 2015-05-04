@@ -3,17 +3,23 @@ em {
 }
 
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 400;
 }
 
-h3 {
+h3,
+h4 {
   text-align: center;
 }
 
-p {
+.presentation p {
   font-size: 1.8rem;
   line-height: 1.66em;
+}
+
+.projets p {
+  margin-bottom: 1.5em;
 }
 
 strong {
@@ -25,7 +31,10 @@ ul {
   padding: 0;
 
   li {
-    line-height: 2em;
+    line-height: 1.5em;
+    margin-left: 1.5em;
+    padding-left: 40px;
+    position: relative;
 
     &::before {
       background-image: url('../svg/code.svg');
@@ -34,10 +43,18 @@ ul {
       content: ' ';
       display: inline-block;
       height: 20px;
-      margin-left: 1.5em;
-      margin-right: .75em;
-      vertical-align: -4px;
+      left: 0;
+      position: absolute;
+      top: 2px;
       width: 20px;
     }
+  }
+}
+
+.extras li {
+  margin-bottom: 1.5em;
+
+  &:last-of-type {
+    margin-bottom: 0;
   }
 }
