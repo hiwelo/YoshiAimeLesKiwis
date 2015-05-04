@@ -3,14 +3,14 @@
   border-radius: .66em;
   height: 660px;
   opacity: 0;
-  overflow: scroll;
+  overflow: auto;
   padding: 30px 30px 65px;
   pointer-events: none;
   position: fixed;
   transition: all 1s;
   visibility: hidden;
   width: 750px;
-  z-index: 500;
+  z-index: 900;
 
   &.presentation {
     left: -110vw;
@@ -66,4 +66,15 @@
 
 .js--modal--close {
   display: none;
+}
+
+.js--modal {
+  margin: 5em auto;
+  width: 85%;
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

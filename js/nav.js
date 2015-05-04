@@ -2,16 +2,19 @@
 /*global $, jQuery, alert, window*/
 var nav = function () {
     'use strict';
-    var hash = window.location.hash.substr(1);
-    $('.js--modal--close')
-        .removeClass('js--modal--close')
-        .addClass('modal--close');
-    $('.js--modal').fadeOut(0, function () {
-        $(this)
-            .removeClass('js--modal')
-            .addClass('modal')
-            .fadeIn(0);
-    });
+    var hash = window.location.hash.substr(1),
+        height = $(window).height();
+    if (height >= 650) {
+        $('.js--modal--close')
+            .removeClass('js--modal--close')
+            .addClass('modal--close');
+        $('.js--modal').fadeOut(0, function () {
+            $(this)
+                .removeClass('js--modal')
+                .addClass('modal')
+                .fadeIn(0);
+        });
+    }
     $('.navigation--element').click(function () {
         var onglet = $(this).data('onglet');
         if (onglet === 'portfolio') {

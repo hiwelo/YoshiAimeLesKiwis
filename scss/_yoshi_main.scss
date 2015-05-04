@@ -58,3 +58,14 @@ ul {
     margin-bottom: 0;
   }
 }
+
+@media (max-width: 600px) {
+  .inbl {
+    display: block;
+  }
+
+  .w50 {
+    margin: 0 auto;
+    width: 85%;
+  }
+}

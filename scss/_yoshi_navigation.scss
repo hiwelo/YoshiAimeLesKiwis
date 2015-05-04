@@ -84,6 +84,23 @@
     }
   }
 
+  &:active {
+    color: $headings-color;
+
+    span {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    svg {
+      transform: scale(1.15);
+    }
+
+    path {
+      fill: $headings-color;
+    }
+  }
+
   &.actif {
     svg {
       transform: scale(1.33);
